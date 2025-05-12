@@ -1,0 +1,39 @@
+digraph Analysis2 {
+    graph [bgcolor="#F5F6F5", fontname="Arial", fontsize=12];
+    node [shape=box, style=filled, fillcolor="#E6ECEF", fontname="Arial", fontsize=10];
+    edge [color="#50C878", fontname="Arial", fontsize=8];
+
+    // Input Node
+    Input [label="Input CSV\n(Energy_Usage_2010.csv)\nEx: '45, 2000, 200'\n(Age, kWh, therms)", fillcolor="#D3E0EA"];
+
+    // Cleaning Node
+    CleanedData [label="Cleaned Data\nValidate rows: remove missing or invalid age, kWh, or therms", fillcolor="#D3E0EA"];
+
+    // Transformation Nodes
+    MapToPair [label="Map to Pair\nConvert to key-value pairs\nKey: Age bin (e.g., floor(45/10)*10 = 40)\nValue: (kWh, therms)\nEx: (40 -> (2000, 200))", fillcolor="#AED581"];
+
+    CombineByKey [label="<u>Combine by Key\nAggregate by age bin\nSum kWh and therms, and count entries\nEx: 40 -> ((4000, 2), (400, 2))", fillcolor="#AED581"];
+
+    MapValues [label="Map Values\nCompute average per age bin\nDivide sums by counts\nEx: 40 -> (2000, 200)", fillcolor="#AED581"];
+
+    SortByKey [label="Sort by Key\nSort bins in ascending order\nEx: 30, 40, 50...", fillcolor="#AED581"];
+
+    // Output Node
+    Output [label="Output CSV\n(age_energy_correlation_rdd.csv)\nEx: '40,2000,200'", fillcolor="#C1E1C1"];
+
+    // Edges
+    Input -> CleanedData [label="Filter"];
+    CleanedData -> MapToPair [label="Bin Age + Map"];
+    MapToPair -> CombineByKey [label="Group by Bin"];
+    CombineByKey -> MapValues [label="Compute Avg"];
+    MapValues -> SortByKey [label="Sort Bins"];
+    SortByKey -> Output [label="Write"];
+
+    // Subgraph for grouping transformations
+    subgraph cluster_transform {
+    style=dashed;
+    color="#50C878";
+    MapToPair; CombineByKey; MapValues; SortByKey;
+    label="Transformation Pipeline\n(RDD Operations)";
+    }
+}

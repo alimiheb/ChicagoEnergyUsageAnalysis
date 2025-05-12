@@ -1,0 +1,34 @@
+digraph Analysis3 {
+    graph [bgcolor="#F5F6F5", fontname="Arial", fontsize=12];
+    node [shape=box, style=filled, fillcolor="#E6ECEF", fontname="Arial", fontsize=10];
+    edge [color="#6D8299", fontname="Arial", fontsize=8];
+
+    // Input Node
+    Input [label="Input CSV\n(Energy_Usage_2010.csv)\nEx: 'Residential,500,1000,100'", fillcolor="#D3E0EA"];
+
+    // Cleaning Node
+    CleanedData [label="Cleaned Data\nRemove rows with missing building type or values", fillcolor="#D3E0EA"];
+
+    // Transformation Nodes with clarified explanations
+    MapToPair [label="Map to Pair\nConvert to (type -> (kWh, therms, population))\nEx: 'Residential' -> (1000, 100, 500)", fillcolor="#B0BEC5"];
+    ReduceByKey [label="Reduce by Key\nAggregate totals by type\nEx: 'Residential' -> (2000, 200, 1000)", fillcolor="#B0BEC5"];
+    SortByKey [label="Sort by Key\nAlphabetical order by building type", fillcolor="#B0BEC5"];
+
+    // Output Node
+    Output [label="Output CSV\n(usage_by_building_type_and_population_rdd.csv)\nEx: 'Residential,2000,200,1000'", fillcolor="#C1E1C1"];
+
+    // Edges
+    Input -> CleanedData [label="Filter"];
+    CleanedData -> MapToPair [label="Extract & Pair"];
+    MapToPair -> ReduceByKey [label="Aggregate"];
+    ReduceByKey -> SortByKey [label="Sort"];
+    SortByKey -> Output [label="Save"];
+
+    // Subgraph for grouping transformations
+    subgraph cluster_transform {
+    style=dashed;
+    color="#6D8299";
+    MapToPair; ReduceByKey; SortByKey;
+    label="Transformation Pipeline\n(RDD Operations)";
+    }
+}

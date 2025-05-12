@@ -4,14 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9211072e-68ee-4a42-84fd-afe43a3914ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="9211072e-68ee-4a42-84fd-afe43a3914ca" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/DotFilesForRDD/RDD1.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/DotFilesForRDD/RDD2.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/DotFilesForRDD/RDD3.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/EnergyUsageAnalysisRDD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/GenerateCharts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/analysis_results_rdd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/charts/age_energy_age_energy_correlation_rdd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/charts/building_type_population_usage_by_building_type_and_population_rdd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/charts/community_usage_avg_usage_by_community_rdd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/part-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectBD/EnergyUsageAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/EnergyUsageAnalysisSQL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +49,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="Class" />
       </list>
     </option>
@@ -41,18 +70,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Downloads/booky-App-main/wordcount&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/hp/Downloads/booky-App-main/wordcount",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Downloads\booky-App-main\ChicagoEnergyUsageAnalysis\src\main\java\ProjectBD\DotFilesForRDD" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>

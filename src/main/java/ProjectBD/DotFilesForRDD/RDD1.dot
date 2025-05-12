@@ -1,0 +1,36 @@
+digraph Analysis1 {
+    graph [bgcolor="#F5F6F5", fontname="Arial", fontsize=12];
+    node [shape=box, style=filled, fillcolor="#E6ECEF", fontname="Arial", fontsize=10];
+    edge [color="#4A90E2", fontname="Arial", fontsize=8];
+
+    // Input Node
+    Input [label="Input CSV\n(Energy_Usage_2010.csv)\nEx: 'Albany Park,1000,100'", fillcolor="#D3E0EA"];
+
+    // Cleaning Node
+    CleanedData [label="Cleaned Data\nRemove incomplete rows\nEx: missing kWh or therms", fillcolor="#D3E0EA"];
+
+    // Transformation Nodes with clearer explanations
+    MapToPair [label="Map to Pair\nConvert to (community -> (kWh, therms))\nEx: 'Albany Park' -> (1000, 100)", fillcolor="#A3BFFA"];
+    CombineByKey [label="Combine by Key\nSum values and count entries\nEx: 'Albany Park' -> (3000, 3), (300, 3)", fillcolor="#A3BFFA"];
+    MapValues [label="Map Values\nCompute average usage\nEx: 'Albany Park' -> (1000, 100)", fillcolor="#A3BFFA"];
+    SortByKey [label="Sort by Key\nDescending by community name", fillcolor="#A3BFFA"];
+
+    // Output Node
+    Output [label="Output CSV\n(avg_usage_by_community_rdd.csv)\nEx: 'Albany Park,1000,100'", fillcolor="#C1E1C1"];
+
+    // Edges
+    Input -> CleanedData [label="Filter"];
+    CleanedData -> MapToPair [label="Extract & Pair"];
+    MapToPair -> CombineByKey [label="Aggregate"];
+    CombineByKey -> MapValues [label="Average"];
+    MapValues -> SortByKey [label="Sort"];
+    SortByKey -> Output [label="Save"];
+
+    // Subgraph for grouping transformations
+    subgraph cluster_transform {
+    style=dashed;
+    color="#4A90E2";
+    MapToPair; CombineByKey; MapValues; SortByKey;
+    label="Transformation Pipeline\n(RDD Operations)";
+    }
+}

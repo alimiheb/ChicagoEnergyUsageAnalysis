@@ -8,11 +8,11 @@ import static org.apache.spark.sql.functions.*;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class EnergyUsageAnalysis {
+public class EnergyUsageAnalysisSQL {
     public static void main(String[] args) throws Exception {
         // Initialize Spark session for local testing
         SparkSession spark = SparkSession.builder()
-                .appName("EnergyUsageAnalysis")
+                .appName("EnergyUsageAnalysisSQL")
                 .master("local[*]")
                 .config("spark.sql.csv.write.encoding", "UTF-8") // Force UTF-8 encoding for CSV
                 .getOrCreate();
