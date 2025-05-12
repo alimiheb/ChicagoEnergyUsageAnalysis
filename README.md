@@ -1,18 +1,17 @@
-# Chicago Energy Usage Analysis
+# 🌆 Chicago Energy Usage Analysis (Spark SQL & RDD)
 
-This repository contains a Spark-based Java application to analyze energy usage data for Chicago in 2010. The project performs statistical analysis on the `Energy_Usage_2010.csv` dataset, including average energy consumption by community area, correlation with building age, and distribution by building type. The application was initially developed and tested locally using IntelliJ IDEA and Apache Spark.
+This repository contains a Spark-based Java application to analyze energy usage data for Chicago in 2010. 
+The application was initially developed and tested locally using IntelliJ IDEA and Apache Spark.
 
 ---
 
 ## 📌 Project Description
 
-The **ChicagoEnergyUsageAnalysis** project leverages Apache Spark to process and analyze energy usage data. It calculates:
+The project performs statistical analysis on the `Energy_Usage_2010.csv` dataset using both **Spark SQL** and **Spark RDD** APIs, including:
 
-- Average electricity (kWh) and gas (therms) usage per community area.
-- Correlation between building age (binned into decades) and energy consumption.
-- Total energy usage distribution by building type.
-
-The application is designed for local testing but can be adapted for cloud cluster deployment (e.g., AWS EMR, Databricks).
+- Average energy consumption by community area
+- Correlation between building age and energy usage
+- Distribution by building type with population metrics
 
 ---
 
@@ -23,13 +22,7 @@ The application is designed for local testing but can be adapted for cloud clust
 - **Java Development Kit (JDK):** Version 8 or higher (e.g., OpenJDK 11 or Oracle JDK 11)  
 - **Apache Maven:** Version 3.6 or higher  
 - **Apache Spark:** Version 2.4 or higher (e.g., 3.2.0), compatible with Scala 2.12  
-- **IntelliJ IDEA:** Community or Ultimate edition (version 2021.2 or later)  
-
-### Hardware Requirements
-
-- **RAM:** Minimum 4GB (8GB+ recommended)  
-- **Disk Space:** ~100MB  
-- **CPU:** Multi-core processor (2+ cores)  
+- **IntelliJ IDEA:** Community or Ultimate edition (version 2021.2 or later)
 
 ### Dataset
 
@@ -127,6 +120,10 @@ ChicagoEnergyUsageAnalysis/
 └── README.md
 ```
 
+## 🔥 Spark RDD Implementation
+The RDD implementation provides low-level control over data processing with these key transformations:
+
+### 1. Average Usage by Community Area (RDD)
 
 ## ▶️ Usage
 ### 1. Run the Application
