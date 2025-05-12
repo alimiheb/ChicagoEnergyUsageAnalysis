@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9211072e-68ee-4a42-84fd-afe43a3914ca" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/DotFilesForRDD/RDD1.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/DotFilesForRDD/RDD2.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/DotFilesForRDD/RDD3.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/EnergyUsageAnalysisRDD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/GenerateCharts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/.part-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/age_energy_correlation_rdd/part-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/analysis_results_rdd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/.part-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/avg_usage_by_community_rdd/part-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/charts/age_energy_age_energy_correlation_rdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/charts/building_type_population_usage_by_building_type_and_population_rdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/charts/community_usage_avg_usage_by_community_rdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/.part-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/RDDoutput/usage_by_building_type_and_population_rdd/part-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectBD/EnergyUsageAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectBD/EnergyUsageAnalysisSQL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/hp/Downloads/booky-App-main/wordcount",
+    "last_opened_file_path": "C:/Users/hp/Downloads/booky-App-main/ChicagoEnergyUsageAnalysis/src/main/java/ProjectBD/DotFilesForRDD",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -96,6 +62,14 @@
       <option name="presentableId" value="Default" />
       <updated>1746648276986</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1747084053188</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747084053188</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
