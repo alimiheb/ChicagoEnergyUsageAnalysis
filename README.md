@@ -26,7 +26,7 @@ The project performs statistical analysis on the `Energy_Usage_2010.csv` dataset
 
 ### Dataset
 
-The `Energy_Usage_2010.csv` file (~30,000 rows). Columns should include:
+The `Energy_Usage_2010.csv` file (~30,000 rows , 73 columns). Columns should include:
 
 - COMMUNITY AREA NAME  
 - TOTAL KWH  
@@ -102,23 +102,7 @@ spark-shell
 
 - Place Energy_Usage_2010.csv in src/main/resources/.
 
-
-## 📁 Project Structure
-
-```text
-ChicagoEnergyUsageAnalysis/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── ProjectBD/
-│   │   │       └── EnergyUsageAnalysis.java
-│   │   └── resources/
-│   │       └── Energy_Usage_2010.csv
-├── target/
-│   └── ChicagoEnergyUsageAnalysis-1.0-SNAPSHOT.jar
-├── pom.xml
-└── README.md
-```
+---
 
 ## 🔥 Spark RDD Implementation
 The RDD implementation provides low-level control over data processing with these key transformations:
@@ -153,27 +137,22 @@ The RDD implementation provides low-level control over data processing with thes
   <strong>Figure 2.2:</strong> Building Age vs. Energy Use: Unexpected Spike in 20–30 Year Cohorts
 </div>
 
-## ▶️ Usage
-### 1. Run the Application
+### 3. Building Type Analysis
+#### 🔄 Processing Pipeline
+<div align="center">
+  <img src="src/main/java/ProjectBD/DotFilesForRDD/RDD3.png" alt="RDD Processing Workflow"/>
+  <br>
+  <em>Figure 3.1: Population & Energy by Building Type RDD Process</em>
+</div>
 
-In IntelliJ IDEA:
+#### 📊 Results Visualization
+<div align="center">
+  <img src="src/main/resources/RDDoutput/charts/building_type_population_usage_by_building_type_and_population_rdd.png" alt="RDD Processing Workflow"/>
+  <br>
+  <strong>Figure 3.2:</strong> Population Doesn’t Equal Power: Commercial Buildings’ Disproportionate Electricity Demand.
+</div>
 
-- Go to Run > Edit Configurations
-- Set main class: `ProjectBD.EnergyUsageAnalysis`
-- Run the configuration
-
-The app will:
-
-- Process the dataset
-- Output results to `src/main/resources/`
-- Display top 5 rows of each analysis in the console
-
-### 2. View Results
-
-- Check output directories like `avg_usage_by_community_local/`
-- Open CSV files in a text editor or spreadsheet tool
-- If encoding issues occur, reload in UTF-8
-
+---
 
 ## 💼 Contributing
 
