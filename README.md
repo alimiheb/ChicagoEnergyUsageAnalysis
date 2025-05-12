@@ -125,7 +125,33 @@ The RDD implementation provides low-level control over data processing with thes
 
 ### 1. Average Usage by Community Area (RDD)
 #### 🔄 Processing Pipeline
-![RDD1 Process](yolov8n-pose_100_epochs/results.png)
+<div align="center">
+  <img src="src/main/java/ProjectBD/DotFilesForRDD/RDD1.png" alt="RDD Processing Workflow"/>
+  <br>
+  <em>Figure 1.1: Community-Energy RDD Process</em>
+</div>
+
+#### 📊 Results Visualization
+<div align="center">
+  <img src="src/main/resources/RDDoutput/charts/community_usage_avg_usage_by_community_rdd.png" alt="RDD Processing Workflow"/>
+  <br>
+  <strong>Figure 1.2:</strong> Comparative analysis of average electricity (kWh) and gas (therms) consumption across Chicago community areas. Loop shows higher electricity usage.
+</div>
+
+### 2. Age-Energy Correlation
+#### 🔄 Processing Pipeline
+<div align="center">
+  <img src="src/main/java/ProjectBD/DotFilesForRDD/RDD2.png" alt="RDD Processing Workflow"/>
+  <br>
+  <em>Figure 2.1: Age-Energy RDD Process</em>
+</div>
+
+#### 📊 Results Visualization
+<div align="center">
+  <img src="src/main/resources/RDDoutput/charts/age_energy_age_energy_correlation_rdd.png" alt="RDD Processing Workflow"/>
+  <br>
+  <strong>Figure 2.2:</strong> Building Age vs. Energy Use: Unexpected Spike in 20–30 Year Cohorts
+</div>
 
 ## ▶️ Usage
 ### 1. Run the Application
