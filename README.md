@@ -124,6 +124,8 @@ ChicagoEnergyUsageAnalysis/
 The RDD implementation provides low-level control over data processing with these key transformations:
 
 ### 1. Average Usage by Community Area (RDD)
+#### 🔄 Processing Pipeline
+![RDD1 Process](yolov8n-pose_100_epochs/results.png)
 
 ## ▶️ Usage
 ### 1. Run the Application
